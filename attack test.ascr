@@ -5,6 +5,7 @@
         <action name="ActionPause" version="1.0.0"/>
         <action name="ActionVariableCondition" version="1.0.0"/>
         <action name="ActionVariable" version="1.0.0"/>
+        <action name="ActionMessageBox" version="1.0.0"/>
         <action name="ActionCallProcedure" version="1.0.0"/>
         <action name="ActionBeginProcedure" version="1.0.0"/>
         <action name="ActionFindImage" version="1.1.0"/>
@@ -210,7 +211,7 @@
                 <subParameter name="value" code="0">1</subParameter>
             </parameter>
         </action>
-        <action name="ActionConsole">
+        <action name="ActionConsole" enabled="false">
             <exception id="1" action="0" line=""/>
             <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
@@ -249,8 +250,8 @@
                 <subParameter name="value" code="0">killamount</subParameter>
             </parameter>
             <parameter name="ifDifferent">
-                <subParameter name="action" code="0">do_nothing</subParameter>
-                <subParameter name="line" code="0"></subParameter>
+                <subParameter name="action" code="0">run_code</subParameter>
+                <subParameter name="line" code="1"></subParameter>
             </parameter>
             <parameter name="comparison">
                 <subParameter name="value" code="0">inferiorEqual</subParameter>
@@ -349,7 +350,7 @@
             <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="ifEqual">
-                <subParameter name="action" code="1">do_nothing</subParameter>
+                <subParameter name="action" code="0">run_code</subParameter>
                 <subParameter name="line" code="1">killamount--</subParameter>
             </parameter>
             <parameter name="value">
@@ -359,8 +360,8 @@
                 <subParameter name="value" code="0">killamount</subParameter>
             </parameter>
             <parameter name="ifDifferent">
-                <subParameter name="action" code="0">do_nothing</subParameter>
-                <subParameter name="line" code="0"></subParameter>
+                <subParameter name="action" code="0">run_code</subParameter>
+                <subParameter name="line" code="1"></subParameter>
             </parameter>
             <parameter name="comparison">
                 <subParameter name="value" code="0">superior</subParameter>
@@ -421,6 +422,40 @@
             <exception id="2" action="1" line=""/>
             <parameter name="name">
                 <subParameter name="value" code="0">kill</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionMessageBox" label="fertig1">
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="type">
+                <subParameter name="value" code="0">ok</subParameter>
+            </parameter>
+            <parameter name="title">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="textMode">
+                <subParameter name="value" code="0">automatic</subParameter>
+            </parameter>
+            <parameter name="ifNo">
+                <subParameter name="action" code="0">do_nothing</subParameter>
+                <subParameter name="line" code="0"></subParameter>
+            </parameter>
+            <parameter name="windowIcon">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="message">
+                <subParameter name="value" code="0">fertig</subParameter>
+            </parameter>
+            <parameter name="ifYes">
+                <subParameter name="action" code="0">do_nothing</subParameter>
+                <subParameter name="line" code="0"></subParameter>
+            </parameter>
+            <parameter name="icon">
+                <subParameter name="value" code="0">none</subParameter>
+            </parameter>
+            <parameter name="customIcon">
+                <subParameter name="value" code="0"></subParameter>
             </parameter>
         </action>
     </script>
