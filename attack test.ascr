@@ -4,7 +4,6 @@
     <actions>
         <action name="ActionPause" version="1.0.0"/>
         <action name="ActionVariableCondition" version="1.0.0"/>
-        <action name="ActionMessageBox" version="1.0.0"/>
         <action name="ActionVariable" version="1.0.0"/>
         <action name="ActionCallProcedure" version="1.0.0"/>
         <action name="ActionBeginProcedure" version="1.0.0"/>
@@ -77,7 +76,7 @@
                 <subParameter name="value" code="0">attack</subParameter>
             </parameter>
         </action>
-        <action name="ActionKey">
+        <action name="ActionKey" comment="Angriff1">
             <exception id="1" action="0" line=""/>
             <exception id="0" action="0" line=""/>
             <exception id="33" action="0" line=""/>
@@ -123,7 +122,7 @@
                 <subParameter name="value" code="0">milliseconds</subParameter>
             </parameter>
         </action>
-        <action name="ActionKey">
+        <action name="ActionKey" comment="Angriff2">
             <exception id="1" action="0" line=""/>
             <exception id="0" action="0" line=""/>
             <exception id="33" action="0" line=""/>
@@ -158,41 +157,7 @@
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
         </action>
-        <action name="ActionMessageBox" pauseAfter="300">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
-            <exception id="2" action="1" line=""/>
-            <parameter name="type">
-                <subParameter name="value" code="0">ok</subParameter>
-            </parameter>
-            <parameter name="title">
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
-            <parameter name="textMode">
-                <subParameter name="value" code="0">automatic</subParameter>
-            </parameter>
-            <parameter name="ifNo">
-                <subParameter name="action" code="0">do_nothing</subParameter>
-                <subParameter name="line" code="0"></subParameter>
-            </parameter>
-            <parameter name="windowIcon">
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
-            <parameter name="message">
-                <subParameter name="value" code="0">attack</subParameter>
-            </parameter>
-            <parameter name="ifYes">
-                <subParameter name="action" code="0">do_nothing</subParameter>
-                <subParameter name="line" code="0"></subParameter>
-            </parameter>
-            <parameter name="customIcon">
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
-            <parameter name="icon">
-                <subParameter name="value" code="0">none</subParameter>
-            </parameter>
-        </action>
-        <action name="ActionFindImage">
+        <action name="ActionFindImage" comment="suche nach Monster Default, falls nein = Monster tot">
             <exception id="1" action="0" line=""/>
             <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
@@ -245,40 +210,6 @@
                 <subParameter name="value" code="0">1</subParameter>
             </parameter>
         </action>
-        <action name="ActionMessageBox" pauseAfter="300">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
-            <exception id="2" action="1" line=""/>
-            <parameter name="type">
-                <subParameter name="value" code="0">ok</subParameter>
-            </parameter>
-            <parameter name="title">
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
-            <parameter name="textMode">
-                <subParameter name="value" code="0">automatic</subParameter>
-            </parameter>
-            <parameter name="ifNo">
-                <subParameter name="action" code="0">do_nothing</subParameter>
-                <subParameter name="line" code="0"></subParameter>
-            </parameter>
-            <parameter name="windowIcon">
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
-            <parameter name="message">
-                <subParameter name="value" code="0">attack2</subParameter>
-            </parameter>
-            <parameter name="ifYes">
-                <subParameter name="action" code="0">do_nothing</subParameter>
-                <subParameter name="line" code="0"></subParameter>
-            </parameter>
-            <parameter name="icon">
-                <subParameter name="value" code="0">none</subParameter>
-            </parameter>
-            <parameter name="customIcon">
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
-        </action>
         <action name="ActionConsole">
             <exception id="1" action="0" line=""/>
             <exception id="0" action="0" line=""/>
@@ -303,7 +234,7 @@
                 <subParameter name="value" code="0">kill</subParameter>
             </parameter>
         </action>
-        <action name="ActionVariableCondition">
+        <action name="ActionVariableCondition" comment="zu tötende Monster &gt; 0 dann töte, sonst fertig">
             <exception id="1" action="0" line=""/>
             <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
@@ -325,7 +256,7 @@
                 <subParameter name="value" code="0">inferiorEqual</subParameter>
             </parameter>
         </action>
-        <action name="ActionKey">
+        <action name="ActionKey" comment="Suche nächstes Ziel">
             <exception id="1" action="0" line=""/>
             <exception id="0" action="0" line=""/>
             <exception id="33" action="0" line=""/>
@@ -360,7 +291,7 @@
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
         </action>
-        <action name="ActionFindImage" comment="find monstername:attack:kill" pauseAfter="100">
+        <action name="ActionFindImage" comment="find monstername: attack, sonst suche erneut" pauseAfter="100">
             <exception id="1" action="0" line=""/>
             <exception id="0" action="0" line=""/>
             <exception id="32" action="0" line=""/>
@@ -413,7 +344,7 @@
                 <subParameter name="value" code="0">1</subParameter>
             </parameter>
         </action>
-        <action name="ActionVariableCondition">
+        <action name="ActionVariableCondition" comment="reduziere Anzahl zu tötender Monster um 1">
             <exception id="1" action="0" line=""/>
             <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
@@ -440,7 +371,7 @@
             <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
         </action>
-        <action name="ActionVariable">
+        <action name="ActionVariable" comment="setze Monster">
             <exception id="1" action="0" line=""/>
             <exception id="0" action="0" line=""/>
             <exception id="32" action="0" line=""/>
@@ -462,41 +393,7 @@
                 <subParameter name="value" code="0">monstername</subParameter>
             </parameter>
         </action>
-        <action name="ActionMessageBox">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
-            <exception id="2" action="1" line=""/>
-            <parameter name="type">
-                <subParameter name="value" code="0">ok</subParameter>
-            </parameter>
-            <parameter name="title">
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
-            <parameter name="textMode">
-                <subParameter name="value" code="0">automatic</subParameter>
-            </parameter>
-            <parameter name="ifNo">
-                <subParameter name="action" code="0">do_nothing</subParameter>
-                <subParameter name="line" code="0"></subParameter>
-            </parameter>
-            <parameter name="windowIcon">
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
-            <parameter name="message">
-                <subParameter name="value" code="0">test</subParameter>
-            </parameter>
-            <parameter name="ifYes">
-                <subParameter name="action" code="0">do_nothing</subParameter>
-                <subParameter name="line" code="0"></subParameter>
-            </parameter>
-            <parameter name="icon">
-                <subParameter name="value" code="0">none</subParameter>
-            </parameter>
-            <parameter name="customIcon">
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
-        </action>
-        <action name="ActionVariable">
+        <action name="ActionVariable" comment="setze Anzahl zu tötender Monster">
             <exception id="1" action="0" line=""/>
             <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
