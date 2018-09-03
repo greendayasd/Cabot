@@ -2,17 +2,18 @@
 <scriptfile>
     <settings program="actiona" version="3.9.4" scriptVersion="1.1.0" os="Windows"/>
     <actions>
-        <action name="ActionPause" version="1.0.0"/>
-        <action name="ActionVariableCondition" version="1.0.0"/>
-        <action name="ActionVariable" version="1.0.0"/>
-        <action name="ActionMessageBox" version="1.0.0"/>
-        <action name="ActionCallProcedure" version="1.0.0"/>
-        <action name="ActionBeginProcedure" version="1.0.0"/>
-        <action name="ActionFindImage" version="1.1.0"/>
-        <action name="ActionKey" version="1.0.0"/>
         <action name="ActionWindow" version="1.0.0"/>
-        <action name="ActionEndProcedure" version="1.0.0"/>
+        <action name="ActionKey" version="1.0.0"/>
+        <action name="ActionFindImage" version="1.1.0"/>
+        <action name="ActionGoto" version="1.0.0"/>
+        <action name="ActionBeginProcedure" version="1.0.0"/>
+        <action name="ActionCallProcedure" version="1.0.0"/>
+        <action name="ActionMessageBox" version="1.0.0"/>
+        <action name="ActionPause" version="1.0.0"/>
         <action name="ActionConsole" version="1.0.0"/>
+        <action name="ActionVariable" version="1.0.0"/>
+        <action name="ActionEndProcedure" version="1.0.0"/>
+        <action name="ActionVariableCondition" version="1.0.0"/>
     </actions>
     <parameters>
         <parameter name="monstername" code="0" type="0">nipperlug</parameter>
@@ -20,102 +21,102 @@
     <resources/>
     <script pauseBefore="0" pauseAfter="0">
         <action name="ActionWindow" pauseBefore="100" pauseAfter="100">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
-            <exception id="33" action="0" line=""/>
             <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
             <exception id="32" action="0" line=""/>
-            <parameter name="movePosition">
-                <subParameter name="value" code="0"></subParameter>
-                <subParameter name="unit" code="0">0</subParameter>
-            </parameter>
-            <parameter name="resizeWidth">
-                <subParameter name="value" code="0">0</subParameter>
-            </parameter>
+            <exception id="33" action="0" line=""/>
             <parameter name="title">
                 <subParameter name="value" code="0">CABAL</subParameter>
             </parameter>
-            <parameter name="action">
-                <subParameter name="value" code="0">setForeground</subParameter>
+            <parameter name="movePosition">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
             </parameter>
             <parameter name="useBorders">
                 <subParameter name="value" code="0">true</subParameter>
             </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">setForeground</subParameter>
+            </parameter>
             <parameter name="resizeHeight">
+                <subParameter name="value" code="0">0</subParameter>
+            </parameter>
+            <parameter name="resizeWidth">
                 <subParameter name="value" code="0">0</subParameter>
             </parameter>
         </action>
         <action name="ActionBeginProcedure" label="error">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
             <parameter name="name">
                 <subParameter name="value" code="0">error</subParameter>
             </parameter>
         </action>
         <action name="ActionConsole">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
-            <parameter name="text">
-                <subParameter name="value" code="0">Monster not found</subParameter>
-            </parameter>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
             <parameter name="output">
                 <subParameter name="value" code="0">error</subParameter>
             </parameter>
+            <parameter name="text">
+                <subParameter name="value" code="0">Monster not found</subParameter>
+            </parameter>
         </action>
         <action name="ActionEndProcedure">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
         </action>
         <action name="ActionBeginProcedure" label="attack">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
             <parameter name="name">
                 <subParameter name="value" code="0">attack</subParameter>
             </parameter>
         </action>
-        <action name="ActionKey" comment="Angriff1">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
-            <exception id="33" action="0" line=""/>
-            <exception id="32" action="0" line=""/>
+        <action name="ActionKey" label="attack1" comment="Angriff1">
             <exception id="2" action="1" line=""/>
-            <parameter name="type">
-                <subParameter name="value" code="0">win32</subParameter>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
             </parameter>
-            <parameter name="shift">
+            <parameter name="meta">
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
             <parameter name="action">
                 <subParameter name="value" code="0">pressRelease</subParameter>
             </parameter>
-            <parameter name="pause">
-                <subParameter name="value" code="0">10</subParameter>
-            </parameter>
-            <parameter name="meta">
-                <subParameter name="value" code="0">false</subParameter>
-            </parameter>
             <parameter name="amount">
                 <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">1</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">win32</subParameter>
             </parameter>
             <parameter name="alt">
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
-            <parameter name="key">
-                <subParameter name="isQtKey" code="0">true</subParameter>
-                <subParameter name="key" code="0">1</subParameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
             </parameter>
-            <parameter name="ctrl">
+            <parameter name="shift">
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
         </action>
         <action name="ActionPause">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
             <parameter name="duration">
                 <subParameter name="value" code="0">15</subParameter>
             </parameter>
@@ -124,60 +125,63 @@
             </parameter>
         </action>
         <action name="ActionKey" comment="Angriff2">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
-            <exception id="33" action="0" line=""/>
-            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
-            <parameter name="type">
-                <subParameter name="value" code="0">win32</subParameter>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
             </parameter>
-            <parameter name="shift">
+            <parameter name="meta">
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
             <parameter name="action">
                 <subParameter name="value" code="0">pressRelease</subParameter>
             </parameter>
-            <parameter name="pause">
-                <subParameter name="value" code="0">10</subParameter>
-            </parameter>
-            <parameter name="meta">
-                <subParameter name="value" code="0">false</subParameter>
-            </parameter>
             <parameter name="amount">
                 <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">2</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">win32</subParameter>
             </parameter>
             <parameter name="alt">
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
-            <parameter name="key">
-                <subParameter name="isQtKey" code="0">true</subParameter>
-                <subParameter name="key" code="0">2</subParameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
             </parameter>
-            <parameter name="ctrl">
+            <parameter name="shift">
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
         </action>
         <action name="ActionFindImage" comment="suche nach Monster Default, falls nein = Monster tot">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
             <exception id="32" action="0" line=""/>
+            <parameter name="windowName">
+                <subParameter name="value" code="0">CABAL</subParameter>
+            </parameter>
             <parameter name="position">
                 <subParameter name="value" code="0"></subParameter>
             </parameter>
             <parameter name="ifFound">
                 <subParameter name="action" code="0">goto</subParameter>
-                <subParameter name="line" code="0">attack</subParameter>
+                <subParameter name="line" code="0">attack1</subParameter>
+            </parameter>
+            <parameter name="maximumMatches">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="source">
+                <subParameter name="value" code="0">window</subParameter>
             </parameter>
             <parameter name="confidence">
                 <subParameter name="value" code="0"></subParameter>
-            </parameter>
-            <parameter name="windowName">
-                <subParameter name="value" code="0">CABAL</subParameter>
-            </parameter>
-            <parameter name="windowRelativePosition">
-                <subParameter name="value" code="0">false</subParameter>
             </parameter>
             <parameter name="method">
                 <subParameter name="value" code="0">correlationcoefficient</subParameter>
@@ -185,8 +189,8 @@
             <parameter name="confidenceMinimum">
                 <subParameter name="value" code="0">90</subParameter>
             </parameter>
-            <parameter name="imageToSearchIn">
-                <subParameter name="value" code="0"></subParameter>
+            <parameter name="windowRelativePosition">
+                <subParameter name="value" code="0">false</subParameter>
             </parameter>
             <parameter name="ifNotFound">
                 <subParameter name="action" code="0">do_nothing</subParameter>
@@ -195,57 +199,47 @@
             <parameter name="downPyramidCount">
                 <subParameter name="value" code="0">1</subParameter>
             </parameter>
-            <parameter name="searchDelay">
-                <subParameter name="value" code="0">100</subParameter>
+            <parameter name="imageToSearchIn">
+                <subParameter name="value" code="0"></subParameter>
             </parameter>
             <parameter name="searchExpansion">
                 <subParameter name="value" code="0">15</subParameter>
             </parameter>
-            <parameter name="source">
-                <subParameter name="value" code="0">window</subParameter>
+            <parameter name="searchDelay">
+                <subParameter name="value" code="0">100</subParameter>
             </parameter>
             <parameter name="imageToFind">
                 <subParameter name="value" code="0">E:/Cabot/Images/Monster/default.JPG</subParameter>
             </parameter>
-            <parameter name="maximumMatches">
-                <subParameter name="value" code="0">1</subParameter>
-            </parameter>
         </action>
         <action name="ActionConsole" enabled="false">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
-            <parameter name="text">
-                <subParameter name="value" code="0">default nicht gefunden</subParameter>
-            </parameter>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
             <parameter name="output">
                 <subParameter name="value" code="0">information</subParameter>
             </parameter>
+            <parameter name="text">
+                <subParameter name="value" code="0">default nicht gefunden</subParameter>
+            </parameter>
         </action>
         <action name="ActionEndProcedure">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
         </action>
         <action name="ActionBeginProcedure" label="kill">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
             <parameter name="name">
                 <subParameter name="value" code="0">kill</subParameter>
             </parameter>
         </action>
-        <action name="ActionVariableCondition" comment="zu tötende Monster &gt; 0 dann töte, sonst fertig">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
+        <action name="ActionVariableCondition" label="kill1" comment="zu tötende Monster &gt; 0 dann töte, sonst fertig">
             <exception id="2" action="1" line=""/>
-            <parameter name="ifEqual">
-                <subParameter name="action" code="0">goto</subParameter>
-                <subParameter name="line" code="0">kill_end</subParameter>
-            </parameter>
-            <parameter name="value">
-                <subParameter name="value" code="0">0</subParameter>
-            </parameter>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
             <parameter name="variable">
                 <subParameter name="value" code="0">killamount</subParameter>
             </parameter>
@@ -256,47 +250,57 @@
             <parameter name="comparison">
                 <subParameter name="value" code="0">inferiorEqual</subParameter>
             </parameter>
+            <parameter name="ifEqual">
+                <subParameter name="action" code="0">goto</subParameter>
+                <subParameter name="line" code="0">kill_end</subParameter>
+            </parameter>
+            <parameter name="value">
+                <subParameter name="value" code="0">0</subParameter>
+            </parameter>
         </action>
         <action name="ActionKey" comment="Suche nächstes Ziel">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
-            <exception id="33" action="0" line=""/>
-            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
-            <parameter name="type">
-                <subParameter name="value" code="0">win32</subParameter>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
             </parameter>
-            <parameter name="shift">
+            <parameter name="meta">
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
             <parameter name="action">
                 <subParameter name="value" code="0">pressRelease</subParameter>
             </parameter>
-            <parameter name="pause">
-                <subParameter name="value" code="0">10</subParameter>
-            </parameter>
-            <parameter name="meta">
-                <subParameter name="value" code="0">false</subParameter>
-            </parameter>
             <parameter name="amount">
                 <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">Y</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">win32</subParameter>
             </parameter>
             <parameter name="alt">
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
-            <parameter name="key">
-                <subParameter name="isQtKey" code="0">true</subParameter>
-                <subParameter name="key" code="0">Y</subParameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
             </parameter>
-            <parameter name="ctrl">
+            <parameter name="shift">
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
         </action>
         <action name="ActionFindImage" comment="find monstername: attack, sonst suche erneut" pauseAfter="100">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
-            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <parameter name="windowName">
+                <subParameter name="value" code="0">CABAL</subParameter>
+            </parameter>
             <parameter name="position">
                 <subParameter name="value" code="0"></subParameter>
             </parameter>
@@ -304,14 +308,14 @@
                 <subParameter name="action" code="0">call_procedure</subParameter>
                 <subParameter name="line" code="0">attack</subParameter>
             </parameter>
+            <parameter name="maximumMatches">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="source">
+                <subParameter name="value" code="0">window</subParameter>
+            </parameter>
             <parameter name="confidence">
                 <subParameter name="value" code="0"></subParameter>
-            </parameter>
-            <parameter name="windowName">
-                <subParameter name="value" code="0">CABAL</subParameter>
-            </parameter>
-            <parameter name="windowRelativePosition">
-                <subParameter name="value" code="0">false</subParameter>
             </parameter>
             <parameter name="method">
                 <subParameter name="value" code="0">correlationcoefficient</subParameter>
@@ -319,43 +323,33 @@
             <parameter name="confidenceMinimum">
                 <subParameter name="value" code="0">90</subParameter>
             </parameter>
-            <parameter name="imageToSearchIn">
-                <subParameter name="value" code="0"></subParameter>
+            <parameter name="windowRelativePosition">
+                <subParameter name="value" code="0">false</subParameter>
             </parameter>
             <parameter name="ifNotFound">
-                <subParameter name="action" code="0">call_procedure</subParameter>
-                <subParameter name="line" code="0">kill</subParameter>
+                <subParameter name="action" code="0">goto</subParameter>
+                <subParameter name="line" code="0">kill1</subParameter>
             </parameter>
             <parameter name="downPyramidCount">
                 <subParameter name="value" code="0">1</subParameter>
             </parameter>
-            <parameter name="searchDelay">
-                <subParameter name="value" code="0">100</subParameter>
+            <parameter name="imageToSearchIn">
+                <subParameter name="value" code="0"></subParameter>
             </parameter>
             <parameter name="searchExpansion">
                 <subParameter name="value" code="0">15</subParameter>
             </parameter>
-            <parameter name="source">
-                <subParameter name="value" code="0">window</subParameter>
+            <parameter name="searchDelay">
+                <subParameter name="value" code="0">100</subParameter>
             </parameter>
             <parameter name="imageToFind">
                 <subParameter name="value" code="0">E:/Cabot/Images/Monster/$monstername.JPG</subParameter>
             </parameter>
-            <parameter name="maximumMatches">
-                <subParameter name="value" code="0">1</subParameter>
-            </parameter>
         </action>
         <action name="ActionVariableCondition" comment="reduziere Anzahl zu tötender Monster um 1">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
-            <parameter name="ifEqual">
-                <subParameter name="action" code="0">run_code</subParameter>
-                <subParameter name="line" code="1">killamount--</subParameter>
-            </parameter>
-            <parameter name="value">
-                <subParameter name="value" code="0">0</subParameter>
-            </parameter>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
             <parameter name="variable">
                 <subParameter name="value" code="0">killamount</subParameter>
             </parameter>
@@ -366,17 +360,35 @@
             <parameter name="comparison">
                 <subParameter name="value" code="0">superior</subParameter>
             </parameter>
+            <parameter name="ifEqual">
+                <subParameter name="action" code="0">run_code</subParameter>
+                <subParameter name="line" code="1">killamount--</subParameter>
+            </parameter>
+            <parameter name="value">
+                <subParameter name="value" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionGoto">
+            <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <parameter name="line">
+                <subParameter name="value" code="0">kill1</subParameter>
+            </parameter>
         </action>
         <action name="ActionEndProcedure" label="kill_end">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
         </action>
         <action name="ActionVariable" comment="setze Monster">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
-            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <parameter name="variable">
+                <subParameter name="value" code="0">monstername</subParameter>
+            </parameter>
             <parameter name="type">
                 <subParameter name="value" code="0">string</subParameter>
             </parameter>
@@ -384,21 +396,21 @@
                 <subParameter name="value" code="0"></subParameter>
             </parameter>
             <parameter name="positionValue">
-                <subParameter name="value" code="0"></subParameter>
                 <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
             </parameter>
             <parameter name="value">
                 <subParameter name="value" code="0">nipperlug</subParameter>
             </parameter>
-            <parameter name="variable">
-                <subParameter name="value" code="0">monstername</subParameter>
-            </parameter>
         </action>
         <action name="ActionVariable" comment="setze Anzahl zu tötender Monster">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
             <exception id="32" action="0" line=""/>
+            <parameter name="variable">
+                <subParameter name="value" code="0">killamount</subParameter>
+            </parameter>
             <parameter name="type">
                 <subParameter name="value" code="0">integer</subParameter>
             </parameter>
@@ -406,56 +418,53 @@
                 <subParameter name="value" code="0"></subParameter>
             </parameter>
             <parameter name="positionValue">
-                <subParameter name="value" code="0"></subParameter>
                 <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
             </parameter>
             <parameter name="value">
                 <subParameter name="value" code="0">2</subParameter>
             </parameter>
-            <parameter name="variable">
-                <subParameter name="value" code="0">killamount</subParameter>
-            </parameter>
         </action>
-        <action name="ActionCallProcedure">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
+        <action name="ActionCallProcedure" comment="kill">
             <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
             <parameter name="name">
                 <subParameter name="value" code="0">kill</subParameter>
             </parameter>
         </action>
         <action name="ActionMessageBox" label="fertig1" enabled="false">
-            <exception id="1" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
-            <parameter name="type">
-                <subParameter name="value" code="0">ok</subParameter>
-            </parameter>
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
             <parameter name="title">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="customIcon">
                 <subParameter name="value" code="0"></subParameter>
             </parameter>
             <parameter name="textMode">
                 <subParameter name="value" code="0">automatic</subParameter>
             </parameter>
+            <parameter name="windowIcon">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
             <parameter name="ifNo">
                 <subParameter name="action" code="0">do_nothing</subParameter>
                 <subParameter name="line" code="0"></subParameter>
             </parameter>
-            <parameter name="windowIcon">
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
             <parameter name="message">
                 <subParameter name="value" code="0">fertig</subParameter>
-            </parameter>
-            <parameter name="ifYes">
-                <subParameter name="action" code="0">do_nothing</subParameter>
-                <subParameter name="line" code="0"></subParameter>
             </parameter>
             <parameter name="icon">
                 <subParameter name="value" code="0">none</subParameter>
             </parameter>
-            <parameter name="customIcon">
-                <subParameter name="value" code="0"></subParameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">ok</subParameter>
+            </parameter>
+            <parameter name="ifYes">
+                <subParameter name="action" code="0">do_nothing</subParameter>
+                <subParameter name="line" code="0"></subParameter>
             </parameter>
         </action>
     </script>
