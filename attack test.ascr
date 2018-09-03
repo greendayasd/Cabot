@@ -183,14 +183,14 @@
                 <subParameter name="value" code="0">correlationcoefficient</subParameter>
             </parameter>
             <parameter name="confidenceMinimum">
-                <subParameter name="value" code="0">70</subParameter>
+                <subParameter name="value" code="0">90</subParameter>
             </parameter>
             <parameter name="imageToSearchIn">
                 <subParameter name="value" code="0"></subParameter>
             </parameter>
             <parameter name="ifNotFound">
                 <subParameter name="action" code="0">do_nothing</subParameter>
-                <subParameter name="line" code="0"></subParameter>
+                <subParameter name="line" code="0">attack</subParameter>
             </parameter>
             <parameter name="downPyramidCount">
                 <subParameter name="value" code="0">1</subParameter>
@@ -410,7 +410,7 @@
                 <subParameter name="unit" code="0">0</subParameter>
             </parameter>
             <parameter name="value">
-                <subParameter name="value" code="0">1</subParameter>
+                <subParameter name="value" code="0">2</subParameter>
             </parameter>
             <parameter name="variable">
                 <subParameter name="value" code="0">killamount</subParameter>
@@ -424,7 +424,7 @@
                 <subParameter name="value" code="0">kill</subParameter>
             </parameter>
         </action>
-        <action name="ActionMessageBox" label="fertig1">
+        <action name="ActionMessageBox" label="fertig1" enabled="false">
             <exception id="1" action="0" line=""/>
             <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
