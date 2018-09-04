@@ -2,163 +2,130 @@
 <scriptfile>
     <settings program="actiona" version="3.9.4" scriptVersion="1.1.0" os="Windows"/>
     <actions>
-        <action name="ActionWheel" version="1.0.0"/>
-        <action name="ActionLoop" version="1.0.0"/>
-        <action name="ActionMoveCursor" version="1.0.0"/>
-        <action name="ActionClick" version="1.0.0"/>
-        <action name="ActionCode" version="1.0.0"/>
-        <action name="ActionGoto" version="1.0.0"/>
         <action name="ActionWindow" version="1.0.0"/>
+        <action name="ActionEndProcedure" version="1.0.0"/>
+        <action name="ActionGoto" version="1.0.0"/>
         <action name="ActionKey" version="1.0.0"/>
-        <action name="ActionVariable" version="1.0.0"/>
+        <action name="ActionLoop" version="1.0.0"/>
+        <action name="ActionCallProcedure" version="1.0.0"/>
+        <action name="ActionBeginProcedure" version="1.0.0"/>
+        <action name="ActionMoveCursor" version="1.0.0"/>
+        <action name="ActionCode" version="1.0.0"/>
+        <action name="ActionClick" version="1.0.0"/>
         <action name="ActionVariableCondition" version="1.0.0"/>
+        <action name="ActionVariable" version="1.0.0"/>
+        <action name="ActionWheel" version="1.0.0"/>
     </actions>
     <parameters/>
     <resources/>
     <script pauseBefore="0" pauseAfter="0">
         <action name="ActionWindow">
-            <exception id="32" action="0" line=""/>
-            <exception id="33" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
-            <parameter name="title">
-                <subParameter name="value" code="0">CABAL</subParameter>
-            </parameter>
-            <parameter name="useBorders">
-                <subParameter name="value" code="0">true</subParameter>
-            </parameter>
-            <parameter name="resizeWidth">
-                <subParameter name="value" code="0">0</subParameter>
-            </parameter>
             <parameter name="movePosition">
                 <subParameter name="unit" code="0">0</subParameter>
                 <subParameter name="value" code="0"></subParameter>
             </parameter>
-            <parameter name="action">
-                <subParameter name="value" code="0">setForeground</subParameter>
+            <parameter name="useBorders">
+                <subParameter name="value" code="0">true</subParameter>
             </parameter>
             <parameter name="resizeHeight">
                 <subParameter name="value" code="0">0</subParameter>
             </parameter>
-        </action>
-        <action name="ActionVariable" comment="Skill mit Angabe von 0 bis 17">
-            <exception id="32" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
-            <exception id="1" action="0" line=""/>
-            <exception id="2" action="1" line=""/>
-            <parameter name="variable">
-                <subParameter name="value" code="0">skill</subParameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">setForeground</subParameter>
             </parameter>
-            <parameter name="colorValue">
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
-            <parameter name="positionValue">
-                <subParameter name="unit" code="0">0</subParameter>
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
-            <parameter name="type">
-                <subParameter name="value" code="0">integer</subParameter>
-            </parameter>
-            <parameter name="value">
-                <subParameter name="value" code="0">17</subParameter>
-            </parameter>
-        </action>
-        <action name="ActionVariable" comment="Slot 0 bis 1">
-            <exception id="32" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
-            <exception id="1" action="0" line=""/>
-            <exception id="2" action="1" line=""/>
-            <parameter name="variable">
-                <subParameter name="value" code="0">slot</subParameter>
-            </parameter>
-            <parameter name="colorValue">
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
-            <parameter name="positionValue">
-                <subParameter name="unit" code="0">0</subParameter>
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
-            <parameter name="type">
-                <subParameter name="value" code="0">integer</subParameter>
-            </parameter>
-            <parameter name="value">
+            <parameter name="resizeWidth">
                 <subParameter name="value" code="0">0</subParameter>
+            </parameter>
+            <parameter name="title">
+                <subParameter name="value" code="0">CABAL</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionBeginProcedure" label="equip_skill">
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="name">
+                <subParameter name="value" code="0">equip_skill</subParameter>
             </parameter>
         </action>
         <action name="ActionKey" comment="Inventar öffnen um sicherzugehen, dass Skillmenü geschlossen ist">
-            <exception id="32" action="0" line=""/>
-            <exception id="33" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
-            <parameter name="ctrl">
-                <subParameter name="value" code="0">false</subParameter>
-            </parameter>
             <parameter name="shift">
                 <subParameter name="value" code="0">false</subParameter>
-            </parameter>
-            <parameter name="meta">
-                <subParameter name="value" code="0">false</subParameter>
-            </parameter>
-            <parameter name="alt">
-                <subParameter name="value" code="0">false</subParameter>
-            </parameter>
-            <parameter name="amount">
-                <subParameter name="value" code="0">1</subParameter>
             </parameter>
             <parameter name="type">
                 <subParameter name="value" code="0">win32</subParameter>
             </parameter>
-            <parameter name="action">
-                <subParameter name="value" code="0">pressRelease</subParameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
             </parameter>
-            <parameter name="pause">
-                <subParameter name="value" code="0">10</subParameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
             </parameter>
             <parameter name="key">
                 <subParameter name="key" code="0">I</subParameter>
                 <subParameter name="isQtKey" code="0">true</subParameter>
             </parameter>
-        </action>
-        <action name="ActionKey" comment="Skillmenü öffnen">
-            <exception id="32" action="0" line=""/>
-            <exception id="33" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
-            <exception id="1" action="0" line=""/>
-            <exception id="2" action="1" line=""/>
             <parameter name="ctrl">
-                <subParameter name="value" code="0">false</subParameter>
-            </parameter>
-            <parameter name="shift">
-                <subParameter name="value" code="0">false</subParameter>
-            </parameter>
-            <parameter name="meta">
-                <subParameter name="value" code="0">false</subParameter>
-            </parameter>
-            <parameter name="alt">
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
             <parameter name="amount">
                 <subParameter name="value" code="0">1</subParameter>
             </parameter>
-            <parameter name="type">
-                <subParameter name="value" code="0">win32</subParameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
             </parameter>
             <parameter name="action">
                 <subParameter name="value" code="0">pressRelease</subParameter>
             </parameter>
-            <parameter name="pause">
-                <subParameter name="value" code="0">10</subParameter>
+        </action>
+        <action name="ActionKey" comment="Skillmenü öffnen">
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">win32</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
             </parameter>
             <parameter name="key">
                 <subParameter name="key" code="0">K</subParameter>
                 <subParameter name="isQtKey" code="0">true</subParameter>
             </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
         </action>
         <action name="ActionMoveCursor" comment="Cursor über Attack Skills bewegen" pauseAfter="100">
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="positionOffset">
                 <subParameter name="unit" code="0">0</subParameter>
@@ -170,10 +137,10 @@
             </parameter>
         </action>
         <action name="ActionClick">
-            <exception id="32" action="0" line=""/>
-            <exception id="33" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="positionOffset">
                 <subParameter name="unit" code="0">0</subParameter>
@@ -182,20 +149,20 @@
             <parameter name="button">
                 <subParameter name="value" code="0">left</subParameter>
             </parameter>
-            <parameter name="position">
-                <subParameter name="unit" code="0">0</subParameter>
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
             <parameter name="amount">
                 <subParameter name="value" code="0">1</subParameter>
             </parameter>
             <parameter name="action">
                 <subParameter name="value" code="0">pressRelease</subParameter>
             </parameter>
+            <parameter name="position">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
         </action>
         <action name="ActionMoveCursor" comment="Maus zum Scrollen in die Skills bewegen" pauseAfter="100">
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="positionOffset">
                 <subParameter name="unit" code="0">0</subParameter>
@@ -203,21 +170,21 @@
             </parameter>
             <parameter name="position">
                 <subParameter name="unit" code="0">1</subParameter>
-                <subParameter name="value" code="0">90.0781:45.9722</subParameter>
+                <subParameter name="value" code="0">89.6094:26.8056</subParameter>
             </parameter>
         </action>
         <action name="ActionWheel" label="hochscrollen" comment="ganz nach oben scrollen" pauseAfter="100">
-            <exception id="32" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="intensity">
                 <subParameter name="value" code="0">1</subParameter>
             </parameter>
         </action>
         <action name="ActionLoop" comment="9 mal scrollen">
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="line">
                 <subParameter name="value" code="0">hochscrollen</subParameter>
@@ -227,19 +194,19 @@
             </parameter>
         </action>
         <action name="ActionVariableCondition" comment="wenn skill &gt;8 scrollen">
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="variable">
                 <subParameter name="value" code="0">skill</subParameter>
             </parameter>
-            <parameter name="ifEqual">
-                <subParameter name="line" code="0">kein Scrollen</subParameter>
-                <subParameter name="action" code="0">goto</subParameter>
-            </parameter>
             <parameter name="ifDifferent">
                 <subParameter name="line" code="0"></subParameter>
                 <subParameter name="action" code="0">do_nothing</subParameter>
+            </parameter>
+            <parameter name="ifEqual">
+                <subParameter name="line" code="0">kein Scrollen</subParameter>
+                <subParameter name="action" code="0">goto</subParameter>
             </parameter>
             <parameter name="comparison">
                 <subParameter name="value" code="0">inferiorEqual</subParameter>
@@ -249,17 +216,17 @@
             </parameter>
         </action>
         <action name="ActionWheel" label="runterscrollen" comment="nach unten Scrollen" pauseAfter="100">
-            <exception id="32" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="intensity">
                 <subParameter name="value" code="0">-1</subParameter>
             </parameter>
         </action>
         <action name="ActionLoop" comment="9mal scrollen">
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="line">
                 <subParameter name="value" code="0">runterscrollen</subParameter>
@@ -269,20 +236,23 @@
             </parameter>
         </action>
         <action name="ActionCode" comment="skill=skill-9">
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="code">
                 <subParameter name="value" code="1">skill=skill-9</subParameter>
             </parameter>
         </action>
         <action name="ActionVariable" label="kein Scrollen" comment="skillycord">
-            <exception id="32" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="variable">
                 <subParameter name="value" code="0">skillycord</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">float</subParameter>
             </parameter>
             <parameter name="colorValue">
                 <subParameter name="value" code="0"></subParameter>
@@ -291,28 +261,28 @@
                 <subParameter name="unit" code="0">0</subParameter>
                 <subParameter name="value" code="0"></subParameter>
             </parameter>
-            <parameter name="type">
-                <subParameter name="value" code="0">float</subParameter>
-            </parameter>
             <parameter name="value">
                 <subParameter name="value" code="0">0</subParameter>
             </parameter>
         </action>
         <action name="ActionCode" comment="set skillycord">
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="code">
                 <subParameter name="value" code="1">skillycord=26.9444+skill*5.1</subParameter>
             </parameter>
         </action>
         <action name="ActionVariable" comment="skillcord">
-            <exception id="32" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="variable">
                 <subParameter name="value" code="0">skillcord</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">position</subParameter>
             </parameter>
             <parameter name="colorValue">
                 <subParameter name="value" code="0"></subParameter>
@@ -321,16 +291,13 @@
                 <subParameter name="unit" code="0">1</subParameter>
                 <subParameter name="value" code="0">83.125:$skillycord</subParameter>
             </parameter>
-            <parameter name="type">
-                <subParameter name="value" code="0">position</subParameter>
-            </parameter>
             <parameter name="value">
                 <subParameter name="value" code="0"></subParameter>
             </parameter>
         </action>
         <action name="ActionMoveCursor" comment="Maus über Skill bewegen" pauseAfter="100">
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="positionOffset">
                 <subParameter name="unit" code="0">0</subParameter>
@@ -342,10 +309,10 @@
             </parameter>
         </action>
         <action name="ActionClick" comment="Skill anklicken" pauseBefore="200">
-            <exception id="32" action="0" line=""/>
-            <exception id="33" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="positionOffset">
                 <subParameter name="unit" code="0">0</subParameter>
@@ -354,31 +321,31 @@
             <parameter name="button">
                 <subParameter name="value" code="0">left</subParameter>
             </parameter>
-            <parameter name="position">
-                <subParameter name="unit" code="0">0</subParameter>
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
             <parameter name="amount">
                 <subParameter name="value" code="0">1</subParameter>
             </parameter>
             <parameter name="action">
                 <subParameter name="value" code="0">pressRelease</subParameter>
             </parameter>
+            <parameter name="position">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
         </action>
         <action name="ActionVariableCondition" comment="Slot = 0?">
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="variable">
-                <subParameter name="value" code="0">slot</subParameter>
-            </parameter>
-            <parameter name="ifEqual">
-                <subParameter name="line" code="0">kein Scrollen</subParameter>
-                <subParameter name="action" code="0">do_nothing</subParameter>
+                <subParameter name="value" code="0">quickslot</subParameter>
             </parameter>
             <parameter name="ifDifferent">
                 <subParameter name="line" code="0">slot!=0</subParameter>
                 <subParameter name="action" code="0">goto</subParameter>
+            </parameter>
+            <parameter name="ifEqual">
+                <subParameter name="line" code="0">kein Scrollen</subParameter>
+                <subParameter name="action" code="0">do_nothing</subParameter>
             </parameter>
             <parameter name="comparison">
                 <subParameter name="value" code="0">equal</subParameter>
@@ -388,8 +355,8 @@
             </parameter>
         </action>
         <action name="ActionMoveCursor" comment="Maus über Slot 0" pauseAfter="100">
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="positionOffset">
                 <subParameter name="unit" code="0">0</subParameter>
@@ -401,10 +368,10 @@
             </parameter>
         </action>
         <action name="ActionClick">
-            <exception id="32" action="0" line=""/>
-            <exception id="33" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="positionOffset">
                 <subParameter name="unit" code="0">0</subParameter>
@@ -413,28 +380,28 @@
             <parameter name="button">
                 <subParameter name="value" code="0">left</subParameter>
             </parameter>
-            <parameter name="position">
-                <subParameter name="unit" code="0">0</subParameter>
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
             <parameter name="amount">
                 <subParameter name="value" code="0">1</subParameter>
             </parameter>
             <parameter name="action">
                 <subParameter name="value" code="0">pressRelease</subParameter>
             </parameter>
+            <parameter name="position">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
         </action>
         <action name="ActionGoto" comment="ans Ende springen">
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="line">
                 <subParameter name="value" code="0">end</subParameter>
             </parameter>
         </action>
         <action name="ActionMoveCursor" label="slot!=0" comment="Maus über Slot 1" pauseAfter="100">
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="positionOffset">
                 <subParameter name="unit" code="0">0</subParameter>
@@ -446,10 +413,10 @@
             </parameter>
         </action>
         <action name="ActionClick">
-            <exception id="32" action="0" line=""/>
-            <exception id="33" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="positionOffset">
                 <subParameter name="unit" code="0">0</subParameter>
@@ -458,50 +425,107 @@
             <parameter name="button">
                 <subParameter name="value" code="0">left</subParameter>
             </parameter>
-            <parameter name="position">
-                <subParameter name="unit" code="0">0</subParameter>
-                <subParameter name="value" code="0"></subParameter>
-            </parameter>
             <parameter name="amount">
                 <subParameter name="value" code="0">1</subParameter>
             </parameter>
             <parameter name="action">
                 <subParameter name="value" code="0">pressRelease</subParameter>
             </parameter>
+            <parameter name="position">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
         </action>
         <action name="ActionKey" label="end" comment="Skillmenü schließen">
-            <exception id="32" action="0" line=""/>
-            <exception id="33" action="0" line=""/>
-            <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
-            <parameter name="ctrl">
+            <parameter name="shift">
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
-            <parameter name="shift">
+            <parameter name="type">
+                <subParameter name="value" code="0">win32</subParameter>
+            </parameter>
+            <parameter name="alt">
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
             <parameter name="meta">
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
-            <parameter name="alt">
+            <parameter name="key">
+                <subParameter name="key" code="0">K</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="ctrl">
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
             <parameter name="amount">
                 <subParameter name="value" code="0">1</subParameter>
             </parameter>
-            <parameter name="type">
-                <subParameter name="value" code="0">win32</subParameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
             </parameter>
             <parameter name="action">
                 <subParameter name="value" code="0">pressRelease</subParameter>
             </parameter>
-            <parameter name="pause">
-                <subParameter name="value" code="0">10</subParameter>
+        </action>
+        <action name="ActionEndProcedure" label="equip_skill_end">
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+        </action>
+        <action name="ActionVariable" comment="Skill mit Angabe von 0 bis 17">
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="variable">
+                <subParameter name="value" code="0">skill</subParameter>
             </parameter>
-            <parameter name="key">
-                <subParameter name="key" code="0">K</subParameter>
-                <subParameter name="isQtKey" code="0">true</subParameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">integer</subParameter>
+            </parameter>
+            <parameter name="colorValue">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="positionValue">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="value">
+                <subParameter name="value" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionVariable" comment="Slot 0 bis 1">
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="variable">
+                <subParameter name="value" code="0">quickslot</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">integer</subParameter>
+            </parameter>
+            <parameter name="colorValue">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="positionValue">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="value">
+                <subParameter name="value" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionCallProcedure">
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="name">
+                <subParameter name="value" code="0">equip_skill</subParameter>
             </parameter>
         </action>
     </script>
