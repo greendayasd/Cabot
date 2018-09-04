@@ -61,7 +61,7 @@
                 <subParameter name="value" code="0">integer</subParameter>
             </parameter>
             <parameter name="value">
-                <subParameter name="value" code="0">10</subParameter>
+                <subParameter name="value" code="0">17</subParameter>
             </parameter>
         </action>
         <action name="ActionVariable" comment="Slot 0 bis 1">
@@ -83,7 +83,7 @@
                 <subParameter name="value" code="0">integer</subParameter>
             </parameter>
             <parameter name="value">
-                <subParameter name="value" code="0">1</subParameter>
+                <subParameter name="value" code="0">0</subParameter>
             </parameter>
         </action>
         <action name="ActionKey" comment="Inventar öffnen um sicherzugehen, dass Skillmenü geschlossen ist">
@@ -193,7 +193,7 @@
                 <subParameter name="value" code="0">pressRelease</subParameter>
             </parameter>
         </action>
-        <action name="ActionMoveCursor" comment="Maus zum Scrollen in die Skills bewegen">
+        <action name="ActionMoveCursor" comment="Maus zum Scrollen in die Skills bewegen" pauseAfter="100">
             <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
             <exception id="2" action="1" line=""/>
@@ -206,7 +206,7 @@
                 <subParameter name="value" code="0">90.0781:45.9722</subParameter>
             </parameter>
         </action>
-        <action name="ActionWheel" label="hochscrollen" comment="ganz nach oben scrollen">
+        <action name="ActionWheel" label="hochscrollen" comment="ganz nach oben scrollen" pauseAfter="100">
             <exception id="32" action="0" line=""/>
             <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
