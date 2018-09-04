@@ -63,6 +63,121 @@
                 <subParameter name="value" code="0"></subParameter>
             </parameter>
         </action>
+        <action name="ActionBeginProcedure" label="sell">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="name">
+                <subParameter name="value" code="0">sell</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionCallProcedure">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="name">
+                <subParameter name="value" code="0">find_item</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">win32</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">press</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">controlLeft</subParameter>
+                <subParameter name="isQtKey" code="0">false</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <parameter name="position">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="1">itempos</subParameter>
+            </parameter>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">win32</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">release</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">controlLeft</subParameter>
+                <subParameter name="isQtKey" code="0">false</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionEndProcedure" label="sell_end">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+        </action>
         <action name="ActionBeginProcedure" label="buy">
             <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
@@ -438,7 +553,7 @@
             <exception id="1" action="0" line=""/>
             <exception id="2" action="1" line=""/>
         </action>
-        <action name="ActionVariable" comment="set equip">
+        <action name="ActionVariable" comment="set equip" enabled="false">
             <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
             <exception id="2" action="1" line=""/>
@@ -460,12 +575,42 @@
                 <subParameter name="value" code="0"></subParameter>
             </parameter>
         </action>
-        <action name="ActionCallProcedure" comment="equip">
+        <action name="ActionCallProcedure" comment="equip" enabled="false">
             <exception id="0" action="0" line=""/>
             <exception id="1" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="name">
                 <subParameter name="value" code="0">equip</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionVariable" comment="set equip" enabled="false">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="32" action="0" line=""/>
+            <parameter name="value">
+                <subParameter name="value" code="0">1mana1</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">string</subParameter>
+            </parameter>
+            <parameter name="positionValue">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="variable">
+                <subParameter name="value" code="0">equip</subParameter>
+            </parameter>
+            <parameter name="colorValue">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+        </action>
+        <action name="ActionCallProcedure" enabled="false">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="name">
+                <subParameter name="value" code="0">buy</subParameter>
             </parameter>
         </action>
         <action name="ActionVariable" comment="set equip">
@@ -474,7 +619,7 @@
             <exception id="32" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="value">
-                <subParameter name="value" code="0">1mana1</subParameter>
+                <subParameter name="value" code="0">test</subParameter>
             </parameter>
             <parameter name="type">
                 <subParameter name="value" code="0">string</subParameter>
@@ -495,7 +640,7 @@
             <exception id="1" action="0" line=""/>
             <exception id="2" action="1" line=""/>
             <parameter name="name">
-                <subParameter name="value" code="0">buy</subParameter>
+                <subParameter name="value" code="0">sell</subParameter>
             </parameter>
         </action>
     </script>
