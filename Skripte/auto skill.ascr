@@ -12,7 +12,7 @@
     </actions>
     <parameters/>
     <resources/>
-    <script pauseBefore="0" pauseAfter="200">
+    <script pauseBefore="0" pauseAfter="0">
         <action name="ActionWindow">
             <exception id="2" action="1" line=""/>
             <exception id="1" action="0" line=""/>
@@ -117,7 +117,7 @@
                 <subParameter name="value" code="0">false</subParameter>
             </parameter>
         </action>
-        <action name="ActionKey">
+        <action name="ActionKey" pauseAfter="200">
             <exception id="2" action="1" line=""/>
             <exception id="1" action="0" line=""/>
             <exception id="0" action="0" line=""/>
